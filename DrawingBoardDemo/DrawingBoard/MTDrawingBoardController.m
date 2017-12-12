@@ -1,19 +1,19 @@
 //
-//  ViewController.m
+//  MTDrawingBoardController.m
 //  DrawingBoardDemo
 //
 //  Created by 张梦涛 on 2017/12/12.
 //  Copyright © 2017年 MT. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MTDrawingBoardController.h"
 #import "MTDrawingBoardView.h"
 
-@interface ViewController ()
+@interface MTDrawingBoardController ()
 @property(strong,nonatomic)MTDrawingBoardView *boardView;
 @end
 
-@implementation ViewController
+@implementation MTDrawingBoardController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
     [self.boardView setStrokeWidth:2.0];
     self.boardView.frame = self.view.bounds;
     [self.view addSubview:self.boardView];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0/255.0 green:200/255.0  blue:10/255.0 alpha:1]];
+//    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0/255.0 green:200/255.0  blue:10/255.0 alpha:1]];
     [self setNavBtn];
 }
 
@@ -47,11 +47,19 @@
     
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

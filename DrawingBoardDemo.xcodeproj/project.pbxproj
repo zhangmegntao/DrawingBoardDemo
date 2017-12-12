@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43EE48A1FDF819800D64FF3 /* MTDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D43EE4891FDF819800D64FF3 /* MTDrawingBoardView.m */; };
+		D43EE48D1FDF81BA00D64FF3 /* MTContextRef.m in Sources */ = {isa = PBXBuildFile; fileRef = D43EE48C1FDF81BA00D64FF3 /* MTContextRef.m */; };
+		D43EE4901FDFAA2C00D64FF3 /* MTDrawingBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43EE48F1FDFAA2C00D64FF3 /* MTDrawingBoardController.m */; };
 		D4AE2A581FDF749D00B31898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE2A571FDF749D00B31898 /* AppDelegate.m */; };
 		D4AE2A5B1FDF749D00B31898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE2A5A1FDF749D00B31898 /* ViewController.m */; };
 		D4AE2A5E1FDF749D00B31898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE2A5C1FDF749D00B31898 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D43EE4881FDF819800D64FF3 /* MTDrawingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDrawingBoardView.h; sourceTree = "<group>"; };
+		D43EE4891FDF819800D64FF3 /* MTDrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDrawingBoardView.m; sourceTree = "<group>"; };
+		D43EE48B1FDF81BA00D64FF3 /* MTContextRef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTContextRef.h; sourceTree = "<group>"; };
+		D43EE48C1FDF81BA00D64FF3 /* MTContextRef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTContextRef.m; sourceTree = "<group>"; };
+		D43EE48E1FDFAA2C00D64FF3 /* MTDrawingBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDrawingBoardController.h; sourceTree = "<group>"; };
+		D43EE48F1FDFAA2C00D64FF3 /* MTDrawingBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDrawingBoardController.m; sourceTree = "<group>"; };
 		D4AE2A531FDF749D00B31898 /* DrawingBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AE2A561FDF749D00B31898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4AE2A571FDF749D00B31898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D43EE4871FDF815100D64FF3 /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D43EE4881FDF819800D64FF3 /* MTDrawingBoardView.h */,
+				D43EE4891FDF819800D64FF3 /* MTDrawingBoardView.m */,
+				D43EE48B1FDF81BA00D64FF3 /* MTContextRef.h */,
+				D43EE48C1FDF81BA00D64FF3 /* MTContextRef.m */,
+				D43EE48E1FDFAA2C00D64FF3 /* MTDrawingBoardController.h */,
+				D43EE48F1FDFAA2C00D64FF3 /* MTDrawingBoardController.m */,
+			);
+			path = DrawingBoard;
+			sourceTree = "<group>";
+		};
 		D4AE2A4A1FDF749C00B31898 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +80,7 @@
 		D4AE2A551FDF749D00B31898 /* DrawingBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D43EE4871FDF815100D64FF3 /* DrawingBoard */,
 				D4AE2A561FDF749D00B31898 /* AppDelegate.h */,
 				D4AE2A571FDF749D00B31898 /* AppDelegate.m */,
 				D4AE2A591FDF749D00B31898 /* ViewController.h */,
@@ -97,6 +120,7 @@
 		D4AE2A4B1FDF749C00B31898 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MT;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = MT;
 				TargetAttributes = {
@@ -143,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4AE2A5B1FDF749D00B31898 /* ViewController.m in Sources */,
+				D43EE48D1FDF81BA00D64FF3 /* MTContextRef.m in Sources */,
 				D4AE2A661FDF749D00B31898 /* main.m in Sources */,
 				D4AE2A581FDF749D00B31898 /* AppDelegate.m in Sources */,
+				D43EE4901FDFAA2C00D64FF3 /* MTDrawingBoardController.m in Sources */,
+				D43EE48A1FDF819800D64FF3 /* MTDrawingBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J847ZPEL4R;
 				INFOPLIST_FILE = DrawingBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zmt.dasousuo.DrawingBoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J847ZPEL4R;
 				INFOPLIST_FILE = DrawingBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zmt.dasousuo.DrawingBoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MTDrawingBoardController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [UIWindow new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MTDrawingBoardController new]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
